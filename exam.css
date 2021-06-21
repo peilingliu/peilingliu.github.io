@@ -1,5 +1,6 @@
-h1 {
+h1::first-line {
 	text-align: center;
+	font-size: large;
 }
 ul:first-child {
 	font-size: 20px;
