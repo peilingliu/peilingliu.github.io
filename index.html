@@ -3,16 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>Pei-Ling Liu's CV</title>
-    <link rel="stylesheet" href="exam.css">
-    <script>
+    <link rel="stylesheet" href="./exam.css">
+    <script> //JS
       function myFunction() {
-        document.getElementById("click").innerHTML = "Information Management";
+        document.getElementById("click").innerHTML = "Double majoring in English and Information Management";
       }
     </script>
   </head>
   <body>
-    <h1><b>Pei-Ling Liu</b></h1>
-    <h2>Contact information</h2>
+    <h1><b>Pei-Ling Liu</b></h1> //css simple & Pseudo-elements selector
+    <div align="center">
+      <h2>Content Guideline</h2>
+      <ul> //css combinator & Pseudo-class selector
+				<li><a href="#contact">contact info</a></li>
+				<li><a href="#school">education</a></li>
+				<li><a href="#work">work experience</a></li>
+				<li><a href="#will">volunteer experience</a></li>
+			</ul>
+    </div>    
+      <h2 id="contact">Contact information</h2>
     <div>
       <ul>
         <li>Phone 0987-123-123</li>
@@ -20,11 +29,21 @@
         <li>Living Taipei, Taiwan</li>
       </ul>
     </div>
-    <div>
+    <hr>
+    <div id="school">
       <h2>Education Background</h2>
       <h3>National Central Univercity</h3>
+      <p id="click">Department</p>
+      <button type="button" onclick="myFunction()">Show whole text</button>
     </div>
     <hr>
+    <div id="work">
+      <h2>work Experience</h2>
+    </div>
+    <hr>
+    <div id="will">
+      <h2>Volunteer Experience</h2>
+    </div>
     
   </body> 
     
