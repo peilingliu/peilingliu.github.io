@@ -9,42 +9,66 @@
         document.getElementById("click").innerHTML = "Double majoring in English and Information Management";
       }
     </script>
+    <style>
+      h1::first-line {
+        text-align: center;
+        font-size: large;
+      }
+      ul:first-child {
+        font-size: 20px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        top: 0;
+        width: 100%;
+      }
+      ul:first-child li {
+        float: center;
+      }
+      ul:first-child li a {
+        display: block;
+        color: white;
+        background-color: #66cdaa;
+        text-align: center;
+        padding:5px 10px;
+        text-decoration: none;
+      }
+      ul:first-child li a:hover {
+        background-color: #3cb371;
+      }
+    </style>
   </head>
   <body>
 	  <div>
-    <h1><b>Pei-Ling Liu</b></h1> <!-- css simple & Pseudo-elements selector -->
+    <h1><b>Pei-Ling Liu</b></h1> <!-- css simple & Pseudo-elements selector 置中、變大-->
 	  </div>
     <div align="center">
       <h2>Content Guideline</h2>
-	<ul> <!-- css combinator & Pseudo-class selector -->
+	<ul> <!-- css combinator & Pseudo-class selector 置中、變色、製作按鈕-->
 		<li><a href="#contact">contact info</a></li>
+    <li><a href="#skill">skills</a></li>
 		<li><a href="#school">education</a></li>
 		<li><a href="#work">work experience</a></li>
 		<li><a href="#will">volunteer experience</a></li>		
 	</ul>    
-	</div>
-	
-	  <table>
-		<thead>
-			<tr>
-				<ul> <!-- css combinator & Pseudo-class selector -->
-					<li><a href="#contact">contact info</a></li>
-					<li><a href="#school">education</a></li>
-					<li><a href="#work">work experience</a></li>
-					<li><a href="#will">volunteer experience</a></li>		
-
-				</ul>
-			</tr>
-		</thead>
-	    </table>
-    </div>    
+	  </div>
       <h2 id="contact">Contact information</h2>
     <div>
       <ul>
-        <li>Phone 0987-123-123</li><br>
-        <li>Email ppp@gmail.com</li><br>
-        <li>Living Taipei, Taiwan</li>
+        <li><b>Phone</b> 0987-123-123</li><br>
+        <li><b>Email</b> ppp@gmail.com</li><br>
+        <li><b>Living</b> Taipei, Taiwan</li>
       </ul>
+    </div>
+    <hr>
+    <div>
+      <h2 id="skill">Skills</h2>      
+      <ol>
+        <li><b>Languages:</b> Mandarin (native speaker), English (conversant), Hokkien (familiar)</li><br>
+        <li><b>Office Software:</b></li> Microsoft (proficient), Google (intermediate)<br>
+        <li><b>Programming Language:</b> HTML (beginner)</li>
+      </ol>
     </div>
     <hr>
     <div>
@@ -56,13 +80,32 @@
     <hr>
     <div>
       <h2 id="work">Work Experience</h2>
+      <ul>
+        <li><b>2020.7-2021.7 Ministry of Science and Technology Research Project Assistant, English Department,
+          NCU</b></li><br>
+        <i>Dealt with accounting, recruiting, and communication with Taiwanese and foreign subjects to boost 
+          experimental process.</i><br>
+        <li><b>2019.6-2020.6 Accountant and Assistant, Alumni Association, English Department</b></li><br>
+        <i>Handled the accounting process, held events and contacted alumni.</i><br>
+        <li><b>2019.1-2019.8, 2020.9-2020.10 Customer Service Representative, The Computer Center, NCU</b></li><br>
+        <i>Fixed or helped to report customers’IT problems customers confronting.</i>
+      </ul>
     </div>
     <hr>
     <div>
       <h2 id="will">Volunteer Experience</h2>
+      <ul>
+        <li><b>2018.9-2022.6 Class Representative, English Department, NCU</b></li><br>
+        <i>Bridged the gap between teachers and classmates for academic affairs.</i><br>
+        <li><b>2019.10-2020.4 Art Group Leader, The Communication Engineering Department Camp</b></li><br>
+        <i>Led 13 members to work together efficiently in harmony.</i><br>
+        <li><b>2018.11-2019.7 Teaching Group Member, The Communication Engineering Department Camp</b></li><br>
+        <i>Taught 70 senior high students IT knowledge.</i><br>
+      </ul>
     </div>
-    
-  </body> 
-    
+    <div>
+      <h6 style="color: #1E90FF"><i>Please feel free to ask me any further information!</i></h6>
+    </div>
+  </body>     
 </html>
     
