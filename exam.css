@@ -1,0 +1,26 @@
+h1 {
+	text-align: center;
+}
+ul:first-child {
+	font-size: 20px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	top: 0;
+	width: 100%;
+}
+ul:first-child li {
+	float: left;
+}
+ul:first-child li a {
+	display: block;
+	color: white;
+	background-color: #66cdaa;
+	text-align: center;
+	padding:5px 10px;
+	text-decoration: none;
+}
+ul:first-child li a:hover {
+	background-color: #3cb371;
+}
